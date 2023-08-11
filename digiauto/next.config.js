@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   assetPrefix: './',
-  basePath: "/accelar8_website",
+  basePath: "/digiauto",
   images: {
     unoptimized: true,
   },
