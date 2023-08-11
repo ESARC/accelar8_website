@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="flex flex-col md:flex-row flex-grow h-full gap-12 sm:gap-36">
       <div className="flex flex-col justify-center items-center md:items-start gap-12 mx-12 w-[75vw] sm:w-[40em] sm:mx-24">
@@ -29,3 +29,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
