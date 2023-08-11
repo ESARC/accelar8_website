@@ -3,10 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   assetPrefix: './',
-  basePath: "/digiauto",
-  images: {
-    unoptimized: true,
-  },
 }
 
 module.exports = nextConfig;

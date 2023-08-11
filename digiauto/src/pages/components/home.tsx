@@ -21,7 +21,7 @@ export const Home = () => {
       <div className="md:w-1/2 flex items-center justify-center">
         <img
             className="h-full"
-            src="/digiauto/car.svg"
+            src="/car.svg"
             alt="car"
             style={{ width: "55%", marginLeft: "20%"}}
           />
