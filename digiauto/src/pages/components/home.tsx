@@ -21,7 +21,7 @@ export const Home = () => {
       <div className="md:w-1/2 flex items-center justify-center">
         <img
             className="h-full"
-            src="/car.svg"
+            src="/accelar8_website/car.svg"
             alt="car"
             style={{ width: "55%", marginLeft: "20%"}}
           />
