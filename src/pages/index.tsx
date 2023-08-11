@@ -1,6 +1,5 @@
 import Header from "./header";
 import { Home as HomeComponent } from "./components/home";
-import { Benefits as BenefitsComponent } from "./components/benefits";
 
 export default function Home() {
   return (
