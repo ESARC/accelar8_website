@@ -19,7 +19,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">DigiAuto</span>
-            <img className="h-8 w-auto" src='/accelar8_website/digiauto.svg' alt="Logo" />
+            <img className="h-8 w-auto" src='/accelar8_website/logo.svg' alt="Logo" />
           </a>
         </div>
         <div className="flex lg:hidden">
