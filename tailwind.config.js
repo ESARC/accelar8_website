@@ -14,6 +14,9 @@ module.exports = {
       },
       width: {
         'w-100' : '32em',
+      },
+      colors: {
+        'transparent-black': 'rgba(16, 16, 16, 0.66)',
       }
     },
   },

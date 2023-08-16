@@ -1,0 +1,17 @@
+{
+	"name": "welcome-screen",
+	"attributes": {
+		"buttonText": {
+			"type": "string",
+			"default": "Let's start!",
+			"maxLength": 24
+		}
+	},
+	"supports": {
+		"editable": false,
+		"required": false,
+		"attachment": true,
+		"description": true,
+		"logic": false
+	}
+}

@@ -1,17 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-
-
-export const metadata = {
-  title: 'DigiAuto',
-  description:
-    'DigiAuto is here to make your car buying experience as easy as possible.',
-};
+import { metadata } from './utils'
+import Header from './header'
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>{metadata.title}</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.title} />
@@ -23,6 +17,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <body>
+        <Header />
         <Main />
         <NextScript />
       </body>
