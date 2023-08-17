@@ -1,25 +1,29 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Fragment, useState } from "react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
-  Bars3Icon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/20/solid";
 
 function classNames(...classes: (string | undefined)[]): string {
-    return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-transparent">
-      <nav className="h-[20vh] mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav
+        className="h-[20vh] mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">DigiAuto</span>
-            <img className="h-8 w-auto" src='/logo.svg' alt="Logo" />
+            <img className="h-8 w-auto" src="/logo.svg" alt="Logo" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -33,7 +37,6 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-
           <a href="#" className="text-sm font-semibold leading-6 text-white">
             Features
           </a>
@@ -45,22 +48,23 @@ export default function Header() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="/interest" className="text-sm font-semibold leading-6 text-white">
+            Take a survey <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        as="div"
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="/DigiAuto.svg"
-                alt=""
-              />
+              <img className="h-8 w-auto" src="/DigiAuto.svg" alt="" />
             </a>
             <button
               type="button"
@@ -77,10 +81,13 @@ export default function Header() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 bg-slate-300">
                         Product
                         <ChevronDownIcon
-                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
@@ -89,29 +96,29 @@ export default function Header() {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white bg-slate-300"
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white bg-slate-300"
                 >
                   Marketplace
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white bg-slate-300"
                 >
                   Company
                 </a>
               </div>
               <div className="py-6">
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50"
+                  href="/interest"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-slate-300"
                 >
-                  Log in
+                  Take a survey
                 </a>
               </div>
             </div>
@@ -119,5 +126,5 @@ export default function Header() {
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }
