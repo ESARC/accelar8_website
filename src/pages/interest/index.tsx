@@ -88,12 +88,12 @@ const Contact = () => {
             </p>
             &nbsp;
             <p className="text-lg">
-              We\'re thrilled to announce our upcoming pilot program, and we
+              We&apos;re thrilled to announce our upcoming pilot program, and we
               invite you to be a part of this exciting journey.
             </p>
             &nbsp;
             <p className="text-lg">
-              By enrolling in our pilot program, you\'ll have exclusive access to
+              By enrolling in our pilot program, you&apos;ll have exclusive access to
               firsthand experience the future of car buying.
             </p>
             &nbsp;
