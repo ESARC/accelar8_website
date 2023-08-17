@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import metadata from "./utils";
+import metadata from "../utils";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
