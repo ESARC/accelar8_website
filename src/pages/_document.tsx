@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { metadata } from './utils'
+import metadata from './utils'
 import Header from './header'
 
 export default function Document() {
