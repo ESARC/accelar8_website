@@ -6,6 +6,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 function classNames(...classes: (string | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
@@ -48,9 +49,9 @@ export default function Header() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/interest" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/interest" className="text-sm font-semibold leading-6 text-white">
             Take a survey <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog
@@ -114,12 +115,12 @@ export default function Header() {
                 </a>
               </div>
               <div className="py-6">
-                <a
+                <Link
                   href="/interest"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-slate-300"
                 >
                   Take a survey
-                </a>
+                </Link>
               </div>
             </div>
           </div>

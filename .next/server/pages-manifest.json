@@ -1,7 +1,14 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/interest": "pages/interest.js"
+  "/api/gsheet": "pages/api/gsheet.js",
+  "/api/hello": "pages/api/hello.js",
+  "/components/checkBoxSelect": "pages/components/checkBoxSelect.html",
+  "/components/form": "pages/components/form.html",
+  "/components/home": "pages/components/home.html",
+  "/header": "pages/header.html",
+  "/": "pages/index.html",
+  "/interest": "pages/interest.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
 }
